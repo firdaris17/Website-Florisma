@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORIMA | Premium Flower Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .bg-magenta { background-color: #D81B60; }
+        .text-magenta { color: #D81B60; }
+        .border-magenta { border-color: #D81B60; }
+        .hover-magenta:hover { background-color: #AD1457; }
+        .gradient-hero { background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Floating WA -->
+    <a href="https://wa.me/6285646022260" class="fixed bottom-6 right-6 z-[100] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Top Header -->
+    <nav class="sticky top-0 z-[90] bg-white/90 backdrop-blur-md shadow-sm border-b border-pink-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-serif font-bold text-magenta tracking-tight">FLORIMA</h1>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#" class="hover:text-magenta transition">Home</a>
+                <a href="#katalog" class="hover:text-magenta transition">Katalog</a>
+                <a href="#" class="hover:text-magenta transition">Custom</a>
+                <a href="#" class="hover:text-magenta transition">Testimoni</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <button class="relative text-gray-600 hover:text-magenta">
+                    <i class="far fa-heart text-xl"></i>
+                </button>
+                <a href="https://wa.me/6285646022260" class="hidden md:block bg-magenta text-white px-6 py-2 rounded-full text-sm font-semibold hover-magenta transition shadow-lg shadow-pink-200">
+                    Pesan Sekarang
+                </a>
+                <button class="md:hidden text-magenta text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-hero py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left space-y-6">
+                <span class="text-magenta font-bold tracking-widest text-sm uppercase">Premium Florist Probolinggo</span>
+                <h2 class="text-5xl md:text-7xl font-serif text-gray-900 leading-tight">
+                    Beautiful Bouquet For Every <span class="text-magenta italic">Special Moment</span>
+                </h2>
+                <p class="text-gray-600 text-lg md:pr-20">
+                    FLORIMA menyediakan bouquet premium untuk wisuda, ulang tahun, anniversary, dan berbagai momen spesial Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="#katalog" class="bg-magenta text-white px-8 py-4 rounded-full font-bold shadow-xl hover-magenta transition">Lihat Katalog</a>
+                    <a href="#" class="bg-white text-magenta border border-magenta px-8 py-4 rounded-full font-bold hover:bg-pink-50 transition">Order Sekarang</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=800&q=80" alt="Hero Flower" class="rounded-[40px] shadow-2xl rotate-2 hover:rotate-0 transition duration-500 border-[12px] border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-serif font-bold mb-10">Kategori Bouquet</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="p-6 bg-pink-50 rounded-3xl hover:bg-magenta hover:text-white transition group cursor-pointer">
+                    <i class="fas fa-user-graduate text-3xl mb-4 text-magenta group-hover:text-white"></i>
+                    <p class="font-semibold text-sm">Graduation</p>
+                </div>
+                <div class="p-6 bg-pink-50 rounded-3xl hover:bg-magenta hover:text-white transition group cursor-pointer">
+                    <i class="fas fa-money-bill-wave text-3xl mb-4 text-magenta group-hover:text-white"></i>
+                    <p class="font-semibold text-sm">Money Bouquet</p>
+                </div>
+                <div class="p-6 bg-pink-50 rounded-3xl hover:bg-magenta hover:text-white transition group cursor-pointer">
+                    <i class="fas fa-cookie text-3xl mb-4 text-magenta group-hover:text-white"></i>
+                    <p class="font-semibold text-sm">Snack Bouquet</p>
+                </div>
+                <div class="p-6 bg-pink-50 rounded-3xl hover:bg-magenta hover:text-white transition group cursor-pointer">
+                    <i class="fas fa-seedling text-3xl mb-4 text-magenta group-hover:text-white"></i>
+                    <p class="font-semibold text-sm">Fresh Flower</p>
+                </div>
+                <div class="p-6 bg-pink-50 rounded-3xl hover:bg-magenta hover:text-white transition group cursor-pointer">
+                    <i class="fas fa-leaf text-3xl mb-4 text-magenta group-hover:text-white"></i>
+                    <p class="font-semibold text-sm">Artificial</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog -->
+    <section id="katalog" class="py-16 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-serif font-bold text-gray-900">Koleksi Terpopuler</h2>
+                    <p class="text-gray-500 mt-2">Pilih yang paling cocok untuk orang tersayang.</p>
+                </div>
+                <div class="flex gap-4 w-full md:w-auto">
+                    <input type="text" placeholder="Cari bouquet..." class="flex-grow md:w-64 px-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-magenta">
+                    <select class="px-4 py-2 rounded-full border border-gray-200 focus:outline-none text-gray-500">
+                        <option>Terbaru</option>
+                        <option>Harga Terendah</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="group bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1561181286-d39736cbd745?w=500&q=80" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full text-magenta hover:bg-magenta hover:text-white transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="absolute bottom-4 left-4 bg-magenta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Soft Pink Peony</h4>
+                        <p class="text-gray-500 text-sm mt-1">Fresh flower dengan wrapping korean style.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-magenta">Rp 250.000</span>
+                            <a href="#" class="bg-magenta/10 text-magenta p-3 rounded-2xl hover:bg-magenta hover:text-white transition">
+                                <i class="fab fa-whatsapp"></i> Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1597848212624-a19eb3ba01a7?w=500&q=80" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full text-magenta hover:bg-magenta hover:text-white transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="absolute bottom-4 left-4 bg-magenta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Graduation</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Bright Sunflower</h4>
+                        <p class="text-gray-500 text-sm mt-1">Buket matahari segar simbol kesuksesan.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-magenta">Rp 175.000</span>
+                            <a href="#" class="bg-magenta/10 text-magenta p-3 rounded-2xl hover:bg-magenta hover:text-white transition">
+                                <i class="fab fa-whatsapp"></i> Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=500&q=80" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                        <button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full text-magenta hover:bg-magenta hover:text-white transition">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="absolute bottom-4 left-4 bg-magenta text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Dried</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-900">Aesthetic Rustic</h4>
+                        <p class="text-gray-500 text-sm mt-1">Bunga kering awet bertahun-tahun.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold text-magenta">Rp 210.000</span>
+                            <a href="#" class="bg-magenta/10 text-magenta p-3 rounded-2xl hover:bg-magenta hover:text-white transition">
+                                <i class="fab fa-whatsapp"></i> Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-serif font-bold text-center mb-12">What They Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-pink-50 rounded-[32px] relative">
+                    <div class="text-magenta mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-700 italic">"Bunganya segar sekali, wrappingnya juga sangat rapi. Customer service ramah banget!"</p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-magenta/20 rounded-full"></div>
+                        <span class="font-bold text-sm">Siska Amelia</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-pink-50 rounded-[32px] relative">
+                    <div class="text-magenta mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-700 italic">"Pesan dadakan buat wisuda tetap dilayani dengan baik. Hasilnya mewah!"</p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-magenta/20 rounded-full"></div>
+                        <span class="font-bold text-sm">Rian Pratama</span>
+                    </div>
+                </div>
+                <div class="p-8 bg-pink-50 rounded-[32px] relative">
+                    <div class="text-magenta mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-700 italic">"Money bouquet-nya rapi banget pengerjaannya. Recommended banget buat kado."</p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 bg-magenta/20 rounded-full"></div>
+                        <span class="font-bold text-sm">Dewi Sartika</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <h2 class="text-3xl font-serif font-bold text-magenta mb-6">FLORIMA</h2>
+                <p class="text-gray-400 leading-relaxed text-sm">
+                    Menciptakan kebahagiaan melalui rangkaian bunga pilihan terbaik sejak 2023.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Informasi</h4>
+                <ul class="text-gray-400 space-y-3 text-sm">
+                    <li><i class="fas fa-map-marker-alt text-magenta mr-2"></i> JL. Imam Sujai Gang Wira-Wiri No 2</li>
+                    <li><i class="fab fa-whatsapp text-magenta mr-2"></i> 085646022260</li>
+                    <li><i class="fab fa-instagram text-magenta mr-2"></i> @florisma.id</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Jam Operasional</h4>
+                <ul class="text-gray-400 space-y-3 text-sm">
+                    <li>Senin - Sabtu: 08.00 - 20.00</li>
+                    <li>Minggu: 09.00 - 17.00</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Newsletter</h4>
+                <div class="flex bg-white/10 p-1 rounded-full border border-white/20">
+                    <input type="text" placeholder="Email kamu" class="bg-transparent flex-grow px-4 text-xs focus:outline-none">
+                    <button class="bg-magenta px-4 py-2 rounded-full text-xs font-bold">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-gray-500 text-xs">
+            &copy; 2026 FLORIMA Premium Florist. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
